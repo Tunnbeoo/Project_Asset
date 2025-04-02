@@ -1,0 +1,391 @@
+/* Menu styles */
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: black;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu > .box_menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > .box_menu > img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Main menu styles */
+.main-menu {
+    flex-grow: 1;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    position: relative;
+}
+
+.main-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.main-menu ul li a:hover {
+    background: #333;
+}
+
+/* Dropdown menu styles */
+.main-menu ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.main-menu ul li:hover .dropdown {
+    display: block;
+}
+
+.main-menu ul li .dropdown li {
+    display: block;
+}
+
+.main-menu ul li .dropdown li a {
+    color: #333;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.main-menu ul li .dropdown li a:hover {
+    background: #f5f5f5;
+    color: #fdb813;
+}
+
+/* Các kiểu dáng khác giữ nguyên */
+.menu > .box_menu > div > a {
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.menu > .box_menu > div > a:hover {
+    background: rgb(237, 237, 237);
+    border-radius: 5px;
+    color: #149b9b;
+}
+
+
+/* Search button styles */
+.search {
+    display: flex;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+.search input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 300px;
+}
+
+.search i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search:hover {
+    color: #149b9b;
+}
+
+/* User menu styles */
+.user-menu {
+    position: relative;
+    margin-left: 20px;
+}
+
+.user-profile-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    padding: 8px;
+}
+
+.user-info i {
+    font-size: 24px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 200px;
+    z-index: 1000;
+    padding: 8px 0;
+}
+
+.user-profile-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu .menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu .menu-link:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 8px 0;
+}
+
+.dropdown-menu .logout {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    color: #dc3545;
+    cursor: pointer;
+    text-align: left;
+}
+
+.dropdown-menu .logout:hover {
+    background-color: #fff5f5;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.user-actions:hover {
+    opacity: 0.8;
+}
+
+/* Cart styles */
+#box_tim_gio_user {
+    display: flex;
+    align-items: center;
+    margin: -10px 30px 0 0 !important;
+}
+
+.cart_box {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cart_box > a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    border: none;
+    gap: 12px;
+}
+
+.cart_box > a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about__box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__box-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.about__box-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about__box-content .title {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#items_in_cart {
+    background: #ff4d4f;
+    color: white;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 6px;
+    margin-left: 4px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: block;
+    }
+
+    .menu > .box_menu {
+        display: block;
+    }
+
+    .menu > .box_menu > div {
+        padding: 10px;
+        color: black;
+        font-weight: 700;
+    }
+
+    .menu > .box_menu > div:hover {
+        background: rgb(237, 237, 237);
+        border-radius: 5px;
+        color: #149b9b;
+    }
+}
+
+/* Search container styles */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    flex-grow: 1; /* Để thanh tìm kiếm mở rộng giữa header */
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    font-size: 14px;
+    background: white;
+    color: #333;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 6px;
+}
+
+.search-button i {
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover i {
+    color: #fdb813; /* Màu vàng giống thegioididong.com */
+}
+
+/* Dropdown suggestions styles */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    z-index: 1000;
+    width: 100%;
+    max-width: 480px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-suggestions div {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-suggestions div:hover {
+    background: #f5f5f5;
+    color: #fdb813;
+}
+
+@media only screen and (max-width: 480px) {
+    .search-container {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .search-input {
+        max-width: 100%;
+    }
+    .search-suggestions {
+        max-width: 100%;
+    }
+}

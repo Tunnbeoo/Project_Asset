@@ -1,0 +1,184 @@
+.box_tong_TT {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.box_tong_TT h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.box_tong_TT h3 {
+    color: #444;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.box_tong_TT p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.box_tong_TT p strong {
+    min-width: 150px;
+    color: #333;
+}
+
+/* Table Styles */
+.box_tong_TT table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box_tong_TT th {
+    background: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+.box_tong_TT td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    color: #666;
+}
+
+.box_tong_TT tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Button Styles */
+.button_TT {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button_TT:hover {
+    background: #0056b3;
+}
+
+/* Error Message Styles */
+.error-message {
+    background-color: #fff3f3;
+    color: #dc3545;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcdd2;
+}
+
+.box_tong_TT button {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.box_tong_TT button:hover {
+    background: #5a6268;
+}
+
+/* Loading State */
+.box_tong_TT p:only-child {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box_tong_TT {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .box_tong_TT p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box_tong_TT p strong {
+        margin-bottom: 5px;
+    }
+
+    .box_tong_TT table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .box_tong_TT th,
+    .box_tong_TT td {
+        padding: 8px;
+    }
+
+    .button_TT {
+        width: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .box_tong_TT {
+        box-shadow: none;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .button_TT,
+    .box_tong_TT button {
+        display: none;
+    }
+}
+
+/* Product Info Styles */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.product-info span {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Update table styles for product column */
+.box_tong_TT td:first-child {
+    min-width: 300px;
+} 
